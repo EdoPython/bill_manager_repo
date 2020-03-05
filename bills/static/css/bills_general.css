@@ -1,0 +1,4 @@
+.actions a, .actions a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
