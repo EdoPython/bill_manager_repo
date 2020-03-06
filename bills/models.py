@@ -20,10 +20,10 @@ class Bill(models.Model):
     metodo = models.CharField(
         max_length=2,
         choices=list(metodo_choices.items()),
-        default='EF',
+        default='CA',
         blank=False
     )
-    descripcion = models.TextField()
+    descripcion = models.TextField(blank=True)
     insercion = models.DateTimeField(default=timezone.now, editable=False)
 
     def __str__(self):
